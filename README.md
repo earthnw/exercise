@@ -1,0 +1,1 @@
+QaExamTest.java acts as the primary test case for handling login and item purchase functionalities. The pageObjects directory stores the interactions and assertions for the various web pages and components.
