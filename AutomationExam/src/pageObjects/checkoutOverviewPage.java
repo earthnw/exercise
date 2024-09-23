@@ -24,13 +24,21 @@ public class checkoutOverviewPage {
         assertEquals(detail, products.get(productNo-1).getText());
     }
 
-    public void showPaymentInfoLabel(String s) {
+    public void showPaymentInfoLabel(String paymentInfoLabel) {
+        String actualPaymentInfoLabel = driver.findElement(By.cssSelector("[data-test='payment-info-label']")).getText();
+        assertEquals(paymentInfoLabel, actualPaymentInfoLabel);
     }
-    public void showPaymentInfoValue(String s) {
+    public void showPaymentInfoValue(String paymentInfoValue) {
+        String actualPaymentInfoValue = driver.findElement(By.cssSelector("[data-test='payment-info-value']")).getText();
+        assertEquals(paymentInfoValue, actualPaymentInfoValue);
     }
-    public void showShippingInfoLabel(String s) {
+    public void showShippingInfoLabel(String shippingInfoLabel) {
+        String actualShippingInfoLabel = driver.findElement(By.cssSelector("[data-test='shipping-info-label']")).getText();
+        assertEquals(shippingInfoLabel, actualShippingInfoLabel);
     }
-    public void showShippingInfoValue(String s) {
+    public void showShippingInfoValue(String shippingInfoValue) {
+        String actualShippingInfoValue = driver.findElement(By.cssSelector("[data-test='shipping-info-value']")).getText();
+        assertEquals(shippingInfoValue, actualShippingInfoValue);
     }
     public void showPriceTotalLabel(String priceTotalLabel) {
         String actualPriceTotalLabel = driver.findElement(By.cssSelector("[data-test='total-info-label']")).getText();
